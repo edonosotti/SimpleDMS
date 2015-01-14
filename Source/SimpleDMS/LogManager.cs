@@ -11,7 +11,10 @@ namespace SimpleDMS
         public enum LogType
         {
             General = 0,
-            Data = 1
+            Data = 1,
+            Content = 2,
+            Storage = 3,
+            Client = 4
         }
 
         public static void Debug(LogType logType, string message)
