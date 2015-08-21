@@ -63,17 +63,29 @@
       <Project>{eabd3780-7aeb-4713-9acc-2545f2096a2f}</Project>
       <Name>SimpleDMS.Content.Provider.PDF</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SimpleDMS.Content.Provider.Scanner\SimpleDMS.Content.Provider.Scanner.csproj">
+      <Project>{1c0ab4fa-98b4-457a-9ac4-645636d092b7}</Project>
+      <Name>SimpleDMS.Content.Provider.Scanner</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SimpleDMS.Content.Provider.Web\SimpleDMS.Content.Provider.Web.csproj">
       <Project>{500ce037-9213-4df5-b44d-b823f28af495}</Project>
       <Name>SimpleDMS.Content.Provider.Web</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SimpleDMS.Content\SimpleDMS.Content.csproj">
+    <ProjectReference Include="..\SimpleDMS.Content.Provider\SimpleDMS.Content.Provider.csproj">
       <Project>{b2754bd0-0230-4ff4-83ff-84e984cdc519}</Project>
-      <Name>SimpleDMS.Content</Name>
+      <Name>SimpleDMS.Content.Provider</Name>
     </ProjectReference>
     <ProjectReference Include="..\SimpleDMS.Data\SimpleDMS.Data.csproj">
       <Project>{d7632165-156e-4635-82f2-353d8204e7b9}</Project>
       <Name>SimpleDMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleDMS.Storage.Provider.LocalStorageProvider\SimpleDMS.Storage.Provider.LocalStorageProvider.csproj">
+      <Project>{91e58bd5-37fa-4080-8084-177bc022e8b8}</Project>
+      <Name>SimpleDMS.Storage.Provider.LocalStorageProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleDMS.Storage.Provider\SimpleDMS.Storage.Provider.csproj">
+      <Project>{d3733c58-7cda-471c-8de6-c8bceb55c19f}</Project>
+      <Name>SimpleDMS.Storage.Provider</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

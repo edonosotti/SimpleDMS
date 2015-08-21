@@ -1,13 +1,19 @@
-﻿using System;
+﻿using SimpleDMS.Content.Provider.DTO;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using SimpleDMS.Content.DTO;
 
 namespace SimpleDMS.Content.Provider.PDF
 {
     public class PDFContentProvider : IContentProvider
     {
+        // TODO (stub)
+        public ContentItem[] Acquire()
+        {
+            return new ContentItem[] { };
+        }
+
         public ContentItem[] Acquire(Uri source, ICredentials credentials = null)
         {
             var response = new List<ContentItem>();

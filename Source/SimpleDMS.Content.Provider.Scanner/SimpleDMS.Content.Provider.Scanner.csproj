@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2754BD0-0230-4FF4-83FF-84E984CDC519}</ProjectGuid>
+    <ProjectGuid>{1C0AB4FA-98B4-457A-9AC4-645636D092B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleDMS.Content</RootNamespace>
-    <AssemblyName>SimpleDMS.Content</AssemblyName>
+    <RootNamespace>SimpleDMS.Content.Provider.Scanner</RootNamespace>
+    <AssemblyName>SimpleDMS.Content.Provider.Scanner</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,24 +31,45 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\ContentItem.cs" />
-    <Compile Include="IContentProvider.cs" />
+    <Compile Include="Forms\Acquire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Acquire.Designer.cs">
+      <DependentUpon>Acquire.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScannerContentProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\TrdParty\KodakAlaris\twaincs.csproj">
+      <Project>{e00dec90-0a85-47d5-b0e4-39940af8c141}</Project>
+      <Name>twaincs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TrdParty\KodakAlaris\twaincstool\source\twaincstool.csproj">
+      <Project>{60bb8897-e9bb-4cb8-8cdb-fb4093ab8b11}</Project>
+      <Name>twaincstool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleDMS.Content.Provider\SimpleDMS.Content.Provider.csproj">
+      <Project>{b2754bd0-0230-4ff4-83ff-84e984cdc519}</Project>
+      <Name>SimpleDMS.Content.Provider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Acquire.resx">
+      <DependentUpon>Acquire.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

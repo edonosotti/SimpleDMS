@@ -1,5 +1,5 @@
 ﻿
-namespace SimpleDMS.Storage
+namespace SimpleDMS.Storage.Provider
 {
     public class Common
     {

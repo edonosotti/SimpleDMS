@@ -14,7 +14,7 @@ namespace SimpleDMS.Data
         {
             var stored = GetStoredSettings();
 
-            stored.Values[owner] = (object)settings;
+            stored.Values[owner] = settings;
 
             return StoreSettings(stored);
         }

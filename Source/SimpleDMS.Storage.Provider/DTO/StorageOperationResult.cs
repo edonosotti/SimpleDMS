@@ -1,5 +1,5 @@
 ﻿
-namespace SimpleDMS.Storage.DTO
+namespace SimpleDMS.Storage.Provider.DTO
 {
     public class StorageOperationResult
     {

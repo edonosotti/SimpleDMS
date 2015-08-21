@@ -1,10 +1,11 @@
-﻿using System;
-using SimpleDMS.Content.DTO;
+﻿using SimpleDMS.Content.Provider.DTO;
+using System;
 
-namespace SimpleDMS.Content
+namespace SimpleDMS.Content.Provider
 {
     public interface IContentProvider
     {
+        ContentItem[] Acquire();
         ContentItem[] Acquire(Uri source, System.Net.ICredentials credentials = null);
     }
 }

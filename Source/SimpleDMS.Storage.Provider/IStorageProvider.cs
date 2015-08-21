@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using SimpleDMS.Storage.DTO;
 using SimpleDMS.Security;
+using SimpleDMS.Storage.Provider.DTO;
 
-namespace SimpleDMS.Storage
+namespace SimpleDMS.Storage.Provider
 {
     public interface IStorageProvider
     {
@@ -18,8 +18,8 @@ namespace SimpleDMS.Storage
         Form GetCreationForm(IStorageProvider instance);
         Form GetAuthForm(IStorageProvider instance);
         Uri GetURI();
-        SimpleDMS.Storage.Common.ProviderCapabilities GetProviderCapabilities();
-        SimpleDMS.Storage.Common.ProviderInfo GetProviderInfo();
+        Common.ProviderCapabilities GetProviderCapabilities();
+        Common.ProviderInfo GetProviderInfo();
         bool IsConnected();
         void SetURI(Uri uri);
     }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
-using SimpleDMS.Content.DTO;
+using SimpleDMS.Content.Provider.DTO;
 
 namespace SimpleDMS.Content.Provider.Web
 {
@@ -24,6 +24,12 @@ namespace SimpleDMS.Content.Provider.Web
             {
                 return (Document != null && Document.DocumentNode.ChildNodes.Any());
             }
+        }
+
+        // TODO (stub)
+        public ContentItem[] Acquire()
+        {
+            return new ContentItem[] { };
         }
 
         public ContentItem[] Acquire(Uri source, ICredentials credentials = null)

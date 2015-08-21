@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SimpleDMS.Content.DTO
+namespace SimpleDMS.Content.Provider.DTO
 {
     public class ContentItem
     {

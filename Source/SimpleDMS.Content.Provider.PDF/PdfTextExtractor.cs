@@ -7,7 +7,7 @@ using PdfSharp.Pdf;
 using PdfSharp.Pdf.Content;
 using PdfSharp.Pdf.Content.Objects;
 using PdfSharp.Pdf.IO;
-using SimpleDMS.Content.DTO;
+using SimpleDMS.Content.Provider.DTO;
 
 namespace SimpleDMS.Content.Provider.PDF
 {

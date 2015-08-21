@@ -57,12 +57,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SimpleDMS.Content\SimpleDMS.Content.csproj">
+    <ProjectReference Include="..\SimpleDMS.Content.Provider\SimpleDMS.Content.Provider.csproj">
       <Project>{b2754bd0-0230-4ff4-83ff-84e984cdc519}</Project>
-      <Name>SimpleDMS.Content</Name>
+      <Name>SimpleDMS.Content.Provider</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Res\Labels.resx">
       <Generator>ResXFileCodeGenerator</Generator>

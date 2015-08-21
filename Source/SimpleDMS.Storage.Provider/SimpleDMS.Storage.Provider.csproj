@@ -7,8 +7,8 @@
     <ProjectGuid>{D3733C58-7CDA-471C-8DE6-C8BCEB55C19F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleDMS.Storage</RootNamespace>
-    <AssemblyName>SimpleDMS.Storage</AssemblyName>
+    <RootNamespace>SimpleDMS.Storage.Provider</RootNamespace>
+    <AssemblyName>SimpleDMS.Storage.Provider</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -63,6 +63,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

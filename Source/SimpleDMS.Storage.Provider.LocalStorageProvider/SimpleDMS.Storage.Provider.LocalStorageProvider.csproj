@@ -78,9 +78,9 @@
       <Project>{589e704c-a225-4022-8b40-c437567b1da7}</Project>
       <Name>SimpleDMS.Security</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SimpleDMS.Storage\SimpleDMS.Storage.csproj">
+    <ProjectReference Include="..\SimpleDMS.Storage.Provider\SimpleDMS.Storage.Provider.csproj">
       <Project>{d3733c58-7cda-471c-8de6-c8bceb55c19f}</Project>
-      <Name>SimpleDMS.Storage</Name>
+      <Name>SimpleDMS.Storage.Provider</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
